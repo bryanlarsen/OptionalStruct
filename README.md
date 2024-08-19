@@ -273,3 +273,12 @@ What those functions do:
    from `other` is taken. If `self` defines something but not `other`, the value
    is preserved. Naturally, if `self` does not define something but `other` does,
    this value is used.
+
+## `try_into`
+
+`optional_struct` creates a `TryFrom` impl, which you can utilize via `try_into`:
+
+```rust
+    let opt_f = OptionalFoo { bar: Some(1) };
+    let foo: Foo = opt_f.try_into().unwrap();
+```
