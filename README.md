@@ -240,6 +240,8 @@ Normally `optional_struct` copies the derives and attributes from your original 
 
 Even though the struct definition is not emitted, the impl for the struct is still emitted.   The following functions are still available:
 
+(See examples/clap.rs for a fuller example.)
+
 ## `apply`, `build`, and `try_build`
 
 Those three functions are used to build the final version of the structure, by
